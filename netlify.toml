@@ -1,0 +1,7 @@
+[build]
+  publish = "static"
+
+[[redirects]]
+  from = "/"
+  to = "/kleines-nest/"
+  status = 302

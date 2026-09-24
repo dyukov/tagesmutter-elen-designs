@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Pusteblume · Tagesmutter Elen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&family=Caveat:wght@700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#fdf6ec;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:hover{opacity:.8}
+</style>
+</helmet>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#6b4fc8"/><circle cx="50" cy="50" r="20" fill="#9ee0c4"/></svg></template>
+<nav aria-label="Designvarianten" style="position:sticky;top:0;z-index:1000;background:#111110;color:#b8b8b0;font:500 12px/1 'IBM Plex Mono',ui-monospace,Menlo,monospace;letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;gap:16px;padding:8px clamp(12px,3vw,24px);overflow-x:auto;border-bottom:1px solid #2a2a28">
+  <span style="color:#f4f4f0;white-space:nowrap;margin-right:auto;display:flex;align-items:center;gap:10px"><span style="width:10px;height:10px;border:1.5px solid #f4f4f0;transform:rotate(45deg)"></span>Designvorschau</span>
+  <div style="display:flex;gap:4px">
+    <a href="{{ nav.nest }}" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;color:#b8b8b0" style-hover="color:#ffffff;background:#262624"><span style="width:8px;height:8px;border-radius:50%;background:#c8643b"></span><span style="color:#707068">01</span>Kleines Nest</a>
+    <a href="{{ nav.bauk }}" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;color:#b8b8b0" style-hover="color:#ffffff;background:#262624"><span style="width:8px;height:8px;border-radius:50%;background:#e8c35a"></span><span style="color:#707068">02</span>Bauklötzchen</a>
+    <a href="{{ nav.elen }}" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;color:#b8b8b0" style-hover="color:#ffffff;background:#262624"><span style="width:8px;height:8px;border-radius:50%;background:#8fa9d9"></span><span style="color:#707068">03</span>Tagespflege Elen</a>
+    <a href="{{ nav.sonne }}" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;color:#b8b8b0" style-hover="color:#ffffff;background:#262624"><span style="width:8px;height:8px;border-radius:50%;background:#e2483d"></span><span style="color:#707068">04</span>Sonnenkäfer</a>
+    <a href="{{ nav.puste }}" aria-current="page" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;background:#f4f4f0;color:#111110"><span style="width:8px;height:8px;border-radius:50%;background:#9b82e8"></span><span>05</span>Pusteblume</a>
+    <a href="{{ nav.biz }}" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;color:#b8b8b0" style-hover="color:#ffffff;background:#262624"><span style="width:8px;height:8px;border-radius:50%;background:#5fb3a8"></span><span style="color:#707068">06</span>Business</a>
+  </div>
+</nav>
+<div data-screen-label="Pusteblume" style="min-height:100vh;overflow-x:hidden;color:#2a2140;font-family:'Nunito',sans-serif;background-color:#fdf6ec;background-image:radial-gradient(rgba(107,79,200,.14) 1.5px,transparent 1.6px);background-size:26px 26px">
+
+  <header style="max-width:1360px;margin:0 auto;padding:22px clamp(20px,4vw,48px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="width:46px;height:46px;border-radius:50%;background:#9ee0c4;border:3px solid #2a2140;display:flex;align-items:center;justify-content:center"><div style="width:14px;height:14px;border-radius:50%;background:#6b4fc8"></div></div>
+      <div style="display:flex;flex-direction:column">
+        <span style="font:700 28px/1 'Fredoka',sans-serif;letter-spacing:-.01em">Pusteblume</span>
+        <span style="font:700 20px/1 'Caveat',cursive;color:#6b4fc8">bei Tagesmutter Elen</span>
+      </div>
+    </div>
+    <nav style="display:flex;flex-wrap:wrap;gap:6px;font-size:15px;font-weight:800;background:#fff;border:3px solid #2a2140;border-radius:999px;padding:6px">
+      <a href="#" style="padding:10px 16px;border-radius:999px">Über mich</a>
+      <a href="#" style="padding:10px 16px;border-radius:999px">Konzept</a>
+      <a href="#" style="padding:10px 16px;border-radius:999px">Betreuung &amp; Kosten</a>
+      <a href="#" style="padding:10px 16px;border-radius:999px">Galerie</a>
+      <a href="#" style="padding:10px 18px;border-radius:999px;background:#6b4fc8;color:#fff">Kontakt</a>
+    </nav>
+  </header>
+
+  <div style="max-width:1360px;margin:0 auto;padding:clamp(40px,6vw,80px) clamp(20px,4vw,48px) clamp(56px,7vw,96px);display:flex;flex-direction:column;align-items:center;text-align:center;gap:28px;position:relative">
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(12px,2vw,24px);align-items:center">
+      <div style="width:clamp(110px,13vw,170px);aspect-ratio:1;border-radius:50%;border:4px solid #fff;box-shadow:0 0 0 3px #2a2140,6px 8px 0 3px #ff9fb2;background:repeating-linear-gradient(135deg,#f6d9e0 0 10px,#fbe8ec 10px 20px);display:flex;align-items:center;justify-content:center;font:12px 'IBM Plex Mono',monospace;color:#a2677a;transform:rotate(-6deg)">foto: kind</div>
+      <div style="width:clamp(150px,18vw,240px);aspect-ratio:1;border-radius:50%;border:4px solid #fff;box-shadow:0 0 0 3px #2a2140,6px 8px 0 3px #9ee0c4;background:repeating-linear-gradient(135deg,#d6efe4 0 10px,#e6f6ef 10px 20px);display:flex;align-items:center;justify-content:center;font:12px 'IBM Plex Mono',monospace;color:#5a8e79">foto: elen &amp; kinder</div>
+      <div style="width:clamp(110px,13vw,170px);aspect-ratio:1;border-radius:50%;border:4px solid #fff;box-shadow:0 0 0 3px #2a2140,6px 8px 0 3px #ffd36b;background:repeating-linear-gradient(135deg,#f8ecc6 0 10px,#fbf3db 10px 20px);display:flex;align-items:center;justify-content:center;font:12px 'IBM Plex Mono',monospace;color:#9a8448;transform:rotate(5deg)">foto: garten</div>
+    </div>
+    <span style="font:700 clamp(26px,2.6vw,34px)/1 'Caveat',cursive;color:#6b4fc8;transform:rotate(-2deg)">Wünsch dir was — und wachse!</span>
+    <h1 style="margin:0;font:700 clamp(44px,6.4vw,96px)/.98 'Fredoka',sans-serif;letter-spacing:-.02em;max-width:1000px;text-wrap:balance">Kleine Samen, <span style="color:#6b4fc8">große</span> Abenteuer.</h1>
+    <p style="margin:0;font-size:clamp(17px,1.5vw,20px);line-height:1.55;max-width:600px;color:#4a4163">Familiäre Kindertagespflege für fünf Kinder von 1 bis 3 Jahren — mit Garten, Liedern, Matsch und viel Geborgenheit.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center">
+      <a href="#" style="background:#6b4fc8;color:#fff;padding:17px 28px;border:3px solid #2a2140;border-radius:999px;font-weight:800;font-size:17px;box-shadow:0 5px 0 #2a2140">Kennenlernen anfragen</a>
+      <span style="background:#9ee0c4;border:3px solid #2a2140;border-radius:999px;padding:13px 20px;font-weight:800;font-size:15px">{{ placesText }}</span>
+    </div>
+  </div>
+
+  <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,48px) clamp(64px,8vw,104px);display:flex;flex-direction:column;gap:40px">
+    <div style="display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;align-items:flex-end">
+      <h2 style="margin:0;font:700 clamp(34px,4vw,56px)/1 'Fredoka',sans-serif;letter-spacing:-.02em">Unser Konzept als Sticker</h2>
+      <span style="font:700 26px 'Caveat',cursive;color:#6b4fc8">nach Pikler &amp; Berliner Modell</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:28px">
+      <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="4">
+        <div style="background:#fff;border:3px solid #2a2140;border-radius:28px;padding:30px 26px;display:flex;flex-direction:column;gap:14px;box-shadow:0 6px 0 #2a2140">
+          <div style="width:64px;height:64px;border-radius:50%;border:3px solid #2a2140;background:{{ p.color }}"></div>
+          <h3 style="margin:0;font:600 26px 'Fredoka',sans-serif">{{ p.title }}</h3>
+          <p style="margin:0;font-size:16px;line-height:1.55;color:#4a4163">{{ p.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="background:#6b4fc8;color:#fff;border-top:3px solid #2a2140;border-bottom:3px solid #2a2140">
+    <div style="max-width:1360px;margin:0 auto;padding:clamp(64px,8vw,96px) clamp(20px,4vw,48px);display:flex;flex-direction:column;gap:40px">
+      <div style="display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;align-items:flex-end">
+        <h2 style="margin:0;font:700 clamp(34px,4vw,56px)/1 'Fredoka',sans-serif;letter-spacing:-.02em">Unsere Woche</h2>
+        <span style="font:700 26px 'Caveat',cursive;color:#ffd36b">jeden Tag 7:30 – 15:00 Uhr</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:16px">
+        <sc-for list="{{ week }}" as="d" hint-placeholder-count="5">
+          <div style="background:#fff;color:#2a2140;border:3px solid #2a2140;border-radius:24px;padding:22px;display:flex;flex-direction:column;gap:12px;min-height:180px">
+            <span style="align-self:flex-start;font:600 15px 'Fredoka',sans-serif;background:{{ d.color }};border:2px solid #2a2140;border-radius:999px;padding:6px 14px">{{ d.day }}</span>
+            <span style="font:600 24px/1.15 'Fredoka',sans-serif">{{ d.title }}</span>
+            <span style="font-size:15px;line-height:1.5;color:#4a4163">{{ d.text }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1360px;margin:0 auto;padding:clamp(64px,8vw,104px) clamp(20px,4vw,48px);display:flex;flex-wrap:wrap;gap:48px 64px;align-items:center">
+    <div style="flex:1 1 300px;max-width:420px;margin:0 auto;aspect-ratio:1;border-radius:50%;border:4px solid #fff;box-shadow:0 0 0 3px #2a2140,10px 12px 0 3px #ffd36b;background:repeating-linear-gradient(135deg,#e6dff7 0 12px,#f0ebfa 12px 24px);display:flex;align-items:center;justify-content:center;font:13px 'IBM Plex Mono',monospace;color:#7b6aa8">portrait: elen</div>
+    <div style="flex:1.3 1 420px;display:flex;flex-direction:column;gap:18px">
+      <span style="font:700 30px/1 'Caveat',cursive;color:#6b4fc8">Hallo, ich bin Elen!</span>
+      <h2 style="margin:0;font:700 clamp(32px,3.6vw,50px)/1.05 'Fredoka',sans-serif;letter-spacing:-.02em;text-wrap:balance">Tagesmutter, Mama und Pusteblumen-Sammlerin.</h2>
+      <p style="margin:0;font-size:18px;line-height:1.6;color:#4a4163;text-wrap:pretty">Seit 2016 begleite ich Kinder in ihren ersten Jahren — qualifiziert nach DJI-Curriculum und mit Pflegeerlaubnis des Jugendamts. Bei uns zählt, dass sich jedes Kind sicher fühlt.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <span style="background:#fff;border:2px solid #2a2140;border-radius:999px;padding:8px 14px;font-weight:700;font-size:14px">max. 5 Kinder</span>
+        <span style="background:#fff;border:2px solid #2a2140;border-radius:999px;padding:8px 14px;font-weight:700;font-size:14px">1 – 3 Jahre</span>
+        <span style="background:#fff;border:2px solid #2a2140;border-radius:999px;padding:8px 14px;font-weight:700;font-size:14px">Kosten nach Jugendamt-Satzung</span>
+        <span style="background:#fff;border:2px solid #2a2140;border-radius:999px;padding:8px 14px;font-weight:700;font-size:14px">Bio-Mittagessen</span>
+      </div>
+    </div>
+  </div>
+
+  <sc-if value="{{ showGallery }}" hint-placeholder-val="{{ true }}">
+  <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,48px) clamp(64px,8vw,104px);display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font:700 clamp(32px,3.6vw,50px)/1 'Fredoka',sans-serif;letter-spacing:-.02em">Kleine Momente</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:20px">
+      <sc-for list="{{ gallery }}" as="g" hint-placeholder-count="5">
+        <div style="aspect-ratio:1;border-radius:{{ g.radius }};border:3px solid #2a2140;background:repeating-linear-gradient(135deg,#ece6d8 0 12px,#f5f0e6 12px 24px);display:flex;align-items:center;justify-content:center;font:13px 'IBM Plex Mono',monospace;color:#857c68">{{ g.label }}</div>
+      </sc-for>
+    </div>
+  </div>
+  </sc-if>
+
+  <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,48px) clamp(48px,6vw,72px)">
+    <div style="background:#9ee0c4;border:3px solid #2a2140;border-radius:40px;box-shadow:0 8px 0 #2a2140;padding:clamp(32px,5vw,64px);display:flex;flex-wrap:wrap;gap:32px 56px;align-items:center;justify-content:space-between">
+      <div style="flex:1 1 360px;display:flex;flex-direction:column;gap:12px">
+        <span style="font:700 30px/1 'Caveat',cursive;color:#6b4fc8">Pust mal rein!</span>
+        <h2 style="margin:0;font:700 clamp(34px,4vw,54px)/1.02 'Fredoka',sans-serif;letter-spacing:-.02em">Lernen wir uns kennen?</h2>
+        <p style="margin:0;font-size:18px;line-height:1.55;color:#2f3a4a">Wir freuen uns auf euren Besuch — gern mit Kind und Kuscheltier.</p>
+      </div>
+      <div style="flex:0 1 340px;display:flex;flex-direction:column;gap:10px;font-size:18px;font-weight:800">
+        <span>0123 456 789</span>
+        <span style="overflow-wrap:anywhere">hallo@pusteblume-elen.de</span>
+        <a href="#" style="margin-top:8px;background:#6b4fc8;color:#fff;border:3px solid #2a2140;border-radius:999px;padding:16px 24px;text-align:center;box-shadow:0 5px 0 #2a2140">Nachricht schreiben</a>
+      </div>
+    </div>
+  </div>
+
+  <footer style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,48px) 36px;display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;font-size:14px;font-weight:700;color:#6a6280">
+    <span>© 2026 Pusteblume · Kindertagespflege Elen</span>
+    <div style="display:flex;gap:24px"><a href="https://tagesmutter-elen.netlify.app/impressum" target="_blank" rel="noopener noreferrer">Impressum</a><a href="https://tagesmutter-elen.netlify.app/datenschutz" target="_blank" rel="noopener noreferrer">Datenschutz</a></div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;freePlaces&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:2,&quot;min&quot;:0,&quot;max&quot;:5,&quot;tsType&quot;:&quot;number&quot;},&quot;showGallery&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const n = this.props.freePlaces ?? 2;
+    return {
+      nav: (() => { const dc = /\.dc\.html$/.test(decodeURI(location.pathname)); const m = { nest: ['Kleines Nest.dc.html','kleines-nest'], bauk: ['Bauklötzchen.dc.html','bauklotzchen'], elen: ['Tagespflege Elen.dc.html','tagespflege-elen'], sonne: ['Sonnenkäfer.dc.html','sonnenkaefer'], puste: ['Pusteblume.dc.html','pusteblume'], biz: ['Elen Business.dc.html','elen-business'] }; const o = {}; for (const k in m) o[k] = dc ? encodeURI(m[k][0]) : '../' + m[k][1] + '/index.html'; return o; })(),
+      placesText: n > 0 ? `${n} ${n === 1 ? 'Platz' : 'Plätze'} frei ab Januar 2027` : 'Ausgebucht – Warteliste offen',
+      showGallery: this.props.showGallery ?? true,
+      pillars: [
+        { title: 'Kuschelzeit', text: 'Feste Bezugsperson und sanfte Eingewöhnung in eurem Tempo.', color: '#ff9fb2' },
+        { title: 'Draußen', text: 'Jeden Tag in Garten, Wald oder auf dem Spielplatz.', color: '#9ee0c4' },
+        { title: 'Selbst entdecken', text: 'Freies Spiel nach Pikler — Kinder zeigen uns den Weg.', color: '#ffd36b' },
+        { title: 'Frisch gekocht', text: 'Mittagessen täglich selbst gekocht, regional und bio.', color: '#c6b6f5' }
+      ],
+      week: [
+        { day: 'Montag', title: 'Waldtag', text: 'Stöcke, Blätter, Käfer — raus in den Wald.', color: '#9ee0c4' },
+        { day: 'Dienstag', title: 'Musik & Lieder', text: 'Singen, trommeln, tanzen im Kreis.', color: '#ffd36b' },
+        { day: 'Mittwoch', title: 'Kleine Künstler', text: 'Malen, kneten, Fingerfarben.', color: '#ff9fb2' },
+        { day: 'Donnerstag', title: 'Backen', text: 'Gemeinsam Brötchen oder Kekse backen.', color: '#c6b6f5' },
+        { day: 'Freitag', title: 'Spielplatz', text: 'Rutschen, schaukeln, Freunde treffen.', color: '#9ee0c4' }
+      ],
+      gallery: [
+        { label: 'garten', radius: '50%' },
+        { label: 'spielecke', radius: '28px' },
+        { label: 'basteln', radius: '50% 50% 28px 28px' },
+        { label: 'waldtag', radius: '28px' },
+        { label: 'mittagstisch', radius: '50%' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

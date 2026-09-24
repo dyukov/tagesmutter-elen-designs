@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Kindertagespflege Elen · Professionelle Betreuung in Musterstadt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:hover{opacity:.8}
+</style>
+</helmet>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#14284b"/><rect x="30" y="30" width="40" height="40" fill="#5fb3a8"/></svg></template>
+<nav aria-label="Designvarianten" style="position:sticky;top:0;z-index:1000;background:#111110;color:#b8b8b0;font:500 12px/1 'IBM Plex Mono',ui-monospace,Menlo,monospace;letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;gap:16px;padding:8px clamp(12px,3vw,24px);overflow-x:auto;border-bottom:1px solid #2a2a28">
+  <span style="color:#f4f4f0;white-space:nowrap;margin-right:auto;display:flex;align-items:center;gap:10px"><span style="width:10px;height:10px;border:1.5px solid #f4f4f0;transform:rotate(45deg)"></span>Designvorschau</span>
+  <div style="display:flex;gap:4px">
+    <a href="{{ nav.nest }}" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;color:#b8b8b0" style-hover="color:#ffffff;background:#262624"><span style="width:8px;height:8px;border-radius:50%;background:#c8643b"></span><span style="color:#707068">01</span>Kleines Nest</a>
+    <a href="{{ nav.bauk }}" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;color:#b8b8b0" style-hover="color:#ffffff;background:#262624"><span style="width:8px;height:8px;border-radius:50%;background:#e8c35a"></span><span style="color:#707068">02</span>Bauklötzchen</a>
+    <a href="{{ nav.elen }}" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;color:#b8b8b0" style-hover="color:#ffffff;background:#262624"><span style="width:8px;height:8px;border-radius:50%;background:#8fa9d9"></span><span style="color:#707068">03</span>Tagespflege Elen</a>
+    <a href="{{ nav.sonne }}" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;color:#b8b8b0" style-hover="color:#ffffff;background:#262624"><span style="width:8px;height:8px;border-radius:50%;background:#e2483d"></span><span style="color:#707068">04</span>Sonnenkäfer</a>
+    <a href="{{ nav.puste }}" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;color:#b8b8b0" style-hover="color:#ffffff;background:#262624"><span style="width:8px;height:8px;border-radius:50%;background:#9b82e8"></span><span style="color:#707068">05</span>Pusteblume</a>
+    <a href="{{ nav.biz }}" aria-current="page" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;background:#f4f4f0;color:#111110"><span style="width:8px;height:8px;border-radius:50%;background:#5fb3a8"></span><span>06</span>Business</a>
+  </div>
+</nav>
+<div data-screen-label="Elen Business" style="min-height:100vh;overflow-x:hidden;color:#14284b;font-family:'IBM Plex Sans',sans-serif;background:#ffffff">
+
+  <div style="background:#f3f5f8;border-bottom:1px solid #e1e6ee">
+    <div style="max-width:1280px;margin:0 auto;padding:10px clamp(20px,4vw,48px);display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between;font-size:13px;color:#4b5b75">
+      <div style="display:flex;flex-wrap:wrap;gap:8px 24px"><span>Tel. 0123 456 789</span><span>kontakt@kindertagespflege-elen.de</span></div>
+      <span>Mo – Fr · 7:30 – 15:00 Uhr</span>
+    </div>
+  </div>
+
+  <header style="border-bottom:1px solid #e1e6ee">
+    <div style="max-width:1280px;margin:0 auto;padding:18px clamp(20px,4vw,48px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:38px;height:38px;border-radius:8px;background:#14284b;display:flex;align-items:center;justify-content:center"><div style="width:14px;height:14px;border-radius:3px;background:#5fb3a8"></div></div>
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <span style="font-weight:700;font-size:18px;letter-spacing:-.01em">Kindertagespflege Elen</span>
+          <span style="font-size:12px;color:#6a7890">Staatlich anerkannte Tagespflegeperson</span>
+        </div>
+      </div>
+      <nav style="display:flex;flex-wrap:wrap;gap:8px 28px;font-size:15px;font-weight:500;align-items:center">
+        <a href="#">Über mich</a><a href="#">Konzept</a><a href="#">Betreuung &amp; Kosten</a><a href="#">Galerie</a>
+        <a href="#" style="background:#14284b;color:#fff;padding:11px 20px;border-radius:6px;font-weight:600">Platz anfragen</a>
+      </nav>
+    </div>
+  </header>
+
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,6vw,88px) clamp(20px,4vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:48px 64px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <span style="align-self:flex-start;display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#1f6f66;background:#e5f3f1;padding:7px 12px;border-radius:4px"><span style="width:7px;height:7px;border-radius:50%;background:#2a9d8f"></span>{{ placesText }}</span>
+      <h1 style="margin:0;font:500 clamp(38px,4.6vw,62px)/1.08 'IBM Plex Serif',serif;letter-spacing:-.02em;text-wrap:balance">Verlässliche Kindertagespflege für Kinder von 1 bis 3 Jahren.</h1>
+      <p style="margin:0;font-size:clamp(17px,1.4vw,19px);line-height:1.6;color:#4b5b75;max-width:540px">Kleine Gruppe, feste Bezugsperson, klare Abläufe. Gefördert durch das Jugendamt Musterstadt — mit transparenten Kosten und persönlicher Beratung.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a href="#" style="background:#14284b;color:#fff;padding:15px 24px;border-radius:6px;font-weight:600;font-size:16px">Betreuungsplatz anfragen</a>
+        <a href="#" style="border:1px solid #c7d0dd;padding:15px 24px;border-radius:6px;font-weight:600;font-size:16px">Kosten &amp; Förderung</a>
+      </div>
+    </div>
+    <div style="height:clamp(300px,34vw,460px);border-radius:10px;background:repeating-linear-gradient(135deg,#e6ebf2 0 12px,#eff2f7 12px 24px);display:flex;align-items:center;justify-content:center;font:13px 'IBM Plex Mono',monospace;color:#7a879b">foto: betreuungsraum / tagesmutter mit kindern</div>
+  </div>
+
+  <div style="border-top:1px solid #e1e6ee;border-bottom:1px solid #e1e6ee;background:#f8f9fb">
+    <div style="max-width:1280px;margin:0 auto;padding:32px clamp(20px,4vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:24px 40px">
+      <sc-for list="{{ facts }}" as="f" hint-placeholder-count="4">
+        <div style="display:flex;flex-direction:column;gap:4px;border-left:2px solid #2a9d8f;padding-left:16px">
+          <span style="font:500 28px 'IBM Plex Serif',serif">{{ f.value }}</span>
+          <span style="font-size:14px;color:#4b5b75">{{ f.label }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(64px,8vw,104px) clamp(20px,4vw,48px);display:flex;flex-direction:column;gap:40px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:680px">
+      <span style="font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#1f6f66">Leistungen</span>
+      <h2 style="margin:0;font:500 clamp(30px,3.2vw,44px)/1.15 'IBM Plex Serif',serif;letter-spacing:-.01em">Was Ihr Kind bei uns erwartet</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1px;background:#e1e6ee;border:1px solid #e1e6ee;border-radius:10px;overflow:hidden">
+      <sc-for list="{{ services }}" as="s" hint-placeholder-count="6">
+        <div style="background:#fff;padding:32px;display:flex;flex-direction:column;gap:10px">
+          <span style="font:500 13px 'IBM Plex Mono',monospace;color:#2a9d8f">{{ s.n }}</span>
+          <h3 style="margin:0;font-size:19px;font-weight:600">{{ s.title }}</h3>
+          <p style="margin:0;font-size:15px;line-height:1.6;color:#4b5b75">{{ s.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="background:#14284b;color:#fff">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(64px,8vw,104px) clamp(20px,4vw,48px);display:flex;flex-direction:column;gap:40px">
+      <div style="display:flex;flex-wrap:wrap;gap:16px 48px;justify-content:space-between;align-items:flex-end">
+        <div style="display:flex;flex-direction:column;gap:12px;max-width:620px">
+          <span style="font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#7fcfc4">Betreuung &amp; Kosten</span>
+          <h2 style="margin:0;font:500 clamp(30px,3.2vw,44px)/1.15 'IBM Plex Serif',serif;letter-spacing:-.01em">Betreuungsumfang nach Ihrem Bedarf</h2>
+        </div>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#b9c4d6;max-width:420px">Der Elternbeitrag richtet sich nach der Satzung des Jugendamts und Ihrem Einkommen. Wir unterstützen Sie beim Antrag.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px">
+        <sc-for list="{{ plans }}" as="p" hint-placeholder-count="3">
+          <div style="background:#1c3460;border:1px solid #2c4777;border-radius:10px;padding:32px;display:flex;flex-direction:column;gap:18px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span style="font-size:18px;font-weight:600">{{ p.name }}</span><span style="font:500 13px 'IBM Plex Mono',monospace;color:#7fcfc4">{{ p.tag }}</span></div>
+            <span style="font:500 40px/1 'IBM Plex Serif',serif">{{ p.hours }}</span>
+            <span style="font-size:15px;color:#b9c4d6;line-height:1.5">{{ p.text }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <span style="font-size:14px;color:#b9c4d6">Verpflegungspauschale separat · Kündigungsfrist 3 Monate · Urlaubs- und Vertretungsregelung im Betreuungsvertrag</span>
+    </div>
+  </div>
+
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(64px,8vw,104px) clamp(20px,4vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:48px 80px">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#1f6f66">Anmeldung</span>
+        <h2 style="margin:0;font:500 clamp(30px,3.2vw,44px)/1.15 'IBM Plex Serif',serif;letter-spacing:-.01em">In vier Schritten zum Platz</h2>
+      </div>
+      <div style="display:flex;flex-direction:column">
+        <sc-for list="{{ steps }}" as="st" hint-placeholder-count="4">
+          <div style="display:flex;gap:20px;padding:20px 0;border-top:1px solid #e1e6ee">
+            <span style="flex:0 0 36px;height:36px;border-radius:50%;background:#e5f3f1;color:#1f6f66;font-weight:700;display:flex;align-items:center;justify-content:center">{{ st.n }}</span>
+            <div style="display:flex;flex-direction:column;gap:4px"><span style="font-weight:600;font-size:17px">{{ st.title }}</span><span style="font-size:15px;line-height:1.55;color:#4b5b75">{{ st.text }}</span></div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div style="height:260px;border-radius:10px;background:repeating-linear-gradient(135deg,#e6ebf2 0 12px,#eff2f7 12px 24px);display:flex;align-items:center;justify-content:center;font:13px 'IBM Plex Mono',monospace;color:#7a879b">portrait: elen</div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <span style="font-weight:600;font-size:18px">Elen Muster</span>
+        <span style="font-size:15px;line-height:1.6;color:#4b5b75">Tagespflegeperson seit 2016 · Qualifizierung nach DJI-Curriculum (300 UE) · Erste-Hilfe am Kind · Pflegeerlaubnis nach § 43 SGB VIII</span>
+      </div>
+    </div>
+  </div>
+
+  <sc-if value="{{ showFaq }}" hint-placeholder-val="{{ true }}">
+  <div style="background:#f8f9fb;border-top:1px solid #e1e6ee">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(64px,8vw,104px) clamp(20px,4vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:40px 80px">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#1f6f66">Häufige Fragen</span>
+        <h2 style="margin:0;font:500 clamp(30px,3.2vw,44px)/1.15 'IBM Plex Serif',serif;letter-spacing:-.01em">Gut informiert entscheiden</h2>
+      </div>
+      <div style="display:flex;flex-direction:column">
+        <sc-for list="{{ faqs }}" as="q" hint-placeholder-count="4">
+          <div style="border-top:1px solid #e1e6ee">
+            <button onClick="{{ q.toggle }}" style="all:unset;cursor:pointer;width:100%;box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-weight:600;font-size:17px;color:#14284b">{{ q.q }}<span style="font:500 20px 'IBM Plex Mono',monospace;color:#2a9d8f">{{ q.sign }}</span></button>
+            <sc-if value="{{ q.open }}" hint-placeholder-val="{{ false }}">
+              <p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:#4b5b75;max-width:620px">{{ q.a }}</p>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(64px,8vw,104px) clamp(20px,4vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:40px 80px">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <span style="font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#1f6f66">Kontakt</span>
+      <h2 style="margin:0;font:500 clamp(30px,3.2vw,44px)/1.15 'IBM Plex Serif',serif;letter-spacing:-.01em">Unverbindliches Erstgespräch vereinbaren</h2>
+      <p style="margin:0;font-size:16px;line-height:1.6;color:#4b5b75">Ich melde mich innerhalb von zwei Werktagen bei Ihnen.</p>
+      <div style="display:flex;flex-direction:column;gap:6px;font-size:16px;margin-top:8px"><span>Musterstraße 12, 12345 Musterstadt</span><span>0123 456 789</span><span>kontakt@kindertagespflege-elen.de</span></div>
+    </div>
+    <div style="border:1px solid #e1e6ee;border-radius:10px;padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;gap:16px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:16px">
+        <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500">Name<input type="text" style="font:inherit;font-weight:400;padding:12px;border:1px solid #c7d0dd;border-radius:6px"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500">E-Mail<input type="email" style="font:inherit;font-weight:400;padding:12px;border:1px solid #c7d0dd;border-radius:6px"></label>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:16px">
+        <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500">Alter des Kindes<input type="text" placeholder="z. B. 14 Monate" style="font:inherit;font-weight:400;padding:12px;border:1px solid #c7d0dd;border-radius:6px"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500">Gewünschter Beginn<input type="text" placeholder="z. B. Januar 2027" style="font:inherit;font-weight:400;padding:12px;border:1px solid #c7d0dd;border-radius:6px"></label>
+      </div>
+      <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500">Nachricht<textarea rows="4" style="font:inherit;font-weight:400;padding:12px;border:1px solid #c7d0dd;border-radius:6px;resize:vertical"></textarea></label>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px"><button style="all:unset;cursor:pointer;background:#14284b;color:#fff;padding:14px 24px;border-radius:6px;font-weight:600;font-size:16px">Anfrage senden</button><a href="https://tagesmutter-elen.netlify.app/datenschutz" target="_blank" rel="noopener noreferrer" style="font-size:14px;color:#4b5b75;text-decoration:underline">Datenschutz</a></div>
+    </div>
+  </div>
+
+  <footer style="background:#0e1d38;color:#b9c4d6">
+    <div style="max-width:1280px;margin:0 auto;padding:40px clamp(20px,4vw,48px);display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;font-size:14px">
+      <span>© 2026 Kindertagespflege Elen · Musterstadt</span>
+      <div style="display:flex;gap:24px"><a href="https://tagesmutter-elen.netlify.app/impressum" target="_blank" rel="noopener noreferrer">Impressum</a><a href="https://tagesmutter-elen.netlify.app/datenschutz" target="_blank" rel="noopener noreferrer">Datenschutz</a></div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;freePlaces&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:2,&quot;min&quot;:0,&quot;max&quot;:5,&quot;tsType&quot;:&quot;number&quot;},&quot;showFaq&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { open: 0 };
+  renderVals() {
+    const n = this.props.freePlaces ?? 2;
+    const faqs = [
+      { q: 'Was kostet ein Betreuungsplatz?', a: 'Der Elternbeitrag wird vom Jugendamt nach Einkommen und Betreuungsumfang festgelegt. Hinzu kommt eine Verpflegungspauschale.' },
+      { q: 'Wie läuft die Eingewöhnung ab?', a: 'Nach dem Berliner Modell über ca. zwei bis vier Wochen — in enger Absprache mit Ihnen und im Tempo Ihres Kindes.' },
+      { q: 'Was passiert bei Krankheit oder Urlaub?', a: 'Eine Vertretungsregelung über das Jugendamt ist vertraglich vereinbart. Schließzeiten werden frühzeitig bekanntgegeben.' },
+      { q: 'Ab welchem Alter kann mein Kind kommen?', a: 'Ab etwa 12 Monaten bis zum Wechsel in den Kindergarten mit drei Jahren.' }
+    ];
+    return {
+      nav: (() => { const dc = /\.dc\.html$/.test(decodeURI(location.pathname)); const m = { nest: ['Kleines Nest.dc.html','kleines-nest'], bauk: ['Bauklötzchen.dc.html','bauklotzchen'], elen: ['Tagespflege Elen.dc.html','tagespflege-elen'], sonne: ['Sonnenkäfer.dc.html','sonnenkaefer'], puste: ['Pusteblume.dc.html','pusteblume'], biz: ['Elen Business.dc.html','elen-business'] }; const o = {}; for (const k in m) o[k] = dc ? encodeURI(m[k][0]) : '../' + m[k][1] + '/index.html'; return o; })(),
+      placesText: n > 0 ? `${n} ${n === 1 ? 'Platz' : 'Plätze'} verfügbar ab Januar 2027` : 'Derzeit ausgebucht · Warteliste geöffnet',
+      showFaq: this.props.showFaq ?? true,
+      facts: [
+        { value: 'seit 2016', label: 'Erfahrung in der Kindertagespflege' },
+        { value: 'max. 5', label: 'Kinder pro Gruppe' },
+        { value: '§ 43 SGB VIII', label: 'Pflegeerlaubnis des Jugendamts' },
+        { value: '7:30 – 15:00', label: 'Betreuungszeiten Mo – Fr' }
+      ],
+      services: [
+        { n: '01', title: 'Feste Bezugsperson', text: 'Eine vertraute Tagesmutter von der Eingewöhnung bis zum Kindergartenwechsel.' },
+        { n: '02', title: 'Strukturierter Tagesablauf', text: 'Verlässliche Rituale für Essen, Spiel, Ruhe und Bewegung.' },
+        { n: '03', title: 'Frische Verpflegung', text: 'Täglich selbst gekochtes, ausgewogenes Mittagessen aus regionalen Zutaten.' },
+        { n: '04', title: 'Bewegung im Freien', text: 'Tägliche Zeit im Garten, auf dem Spielplatz oder im nahen Wald.' },
+        { n: '05', title: 'Entwicklungsbegleitung', text: 'Regelmäßige Beobachtung, Dokumentation und Elterngespräche.' },
+        { n: '06', title: 'Transparente Kommunikation', text: 'Tägliche Übergabe, Elternabende und Ansprechbarkeit per Telefon.' }
+      ],
+      plans: [
+        { name: 'Teilzeit', tag: 'bis 25 h', hours: '20–25 h', text: 'Pro Woche, z. B. 3 volle Tage oder 5 Vormittage.' },
+        { name: 'Erweitert', tag: 'bis 35 h', hours: '26–35 h', text: 'Pro Woche, flexible Aufteilung nach Absprache.' },
+        { name: 'Vollzeit', tag: 'über 35 h', hours: '36–37,5 h', text: 'Pro Woche, Montag bis Freitag 7:30 – 15:00 Uhr.' }
+      ],
+      steps: [
+        { n: '1', title: 'Anfrage senden', text: 'Über das Formular oder telefonisch — mit Alter und gewünschtem Beginn.' },
+        { n: '2', title: 'Kennenlernen', text: 'Persönliches Gespräch vor Ort, gern gemeinsam mit Ihrem Kind.' },
+        { n: '3', title: 'Antrag beim Jugendamt', text: 'Wir unterstützen Sie beim Antrag auf Förderung in Kindertagespflege.' },
+        { n: '4', title: 'Vertrag & Eingewöhnung', text: 'Betreuungsvertrag und sanfter Start nach dem Berliner Modell.' }
+      ],
+      faqs: faqs.map((f, i) => ({ ...f, open: this.state.open === i, sign: this.state.open === i ? '−' : '+', toggle: () => this.setState(s => ({ open: s.open === i ? -1 : i })) }))
+    };
+  }
+}
+</script>
+</body>
+</html>

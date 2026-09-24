@@ -27,6 +27,7 @@ a:hover{opacity:.75}
     <a href="{{ nav.sonne }}" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;color:#b8b8b0" style-hover="color:#ffffff;background:#262624"><span style="width:8px;height:8px;border-radius:50%;background:#e2483d"></span><span style="color:#707068">04</span>Sonnenkäfer</a>
     <a href="{{ nav.puste }}" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;color:#b8b8b0" style-hover="color:#ffffff;background:#262624"><span style="width:8px;height:8px;border-radius:50%;background:#9b82e8"></span><span style="color:#707068">05</span>Pusteblume</a>
     <a href="{{ nav.biz }}" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;color:#b8b8b0" style-hover="color:#ffffff;background:#262624"><span style="width:8px;height:8px;border-radius:50%;background:#5fb3a8"></span><span style="color:#707068">06</span>Business</a>
+    <a href="{{ nav.modernist }}" style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;white-space:nowrap;text-decoration:none;opacity:1;color:#b8b8b0" style-hover="color:#ffffff;background:#262624"><span style="width:8px;height:8px;border-radius:50%;background:#2f5fb3"></span><span style="color:#707068">07</span>Kreise</a>
   </div>
 </nav>
 <div data-screen-label="Kleines Nest" style="background:#faf5ee;color:#3b2a20;font-family:'Nunito Sans',sans-serif;min-height:100vh;overflow-x:hidden">
@@ -136,7 +137,7 @@ class Component extends DCLogic {
   renderVals() {
     const n = this.props.freePlaces ?? 2;
     return {
-      nav: (() => { const dc = /\.dc\.html$/.test(decodeURI(location.pathname)); const m = { nest: ['Kleines Nest.dc.html','kleines-nest'], bauk: ['Bauklötzchen.dc.html','bauklotzchen'], elen: ['Tagespflege Elen.dc.html','tagespflege-elen'], sonne: ['Sonnenkäfer.dc.html','sonnenkaefer'], puste: ['Pusteblume.dc.html','pusteblume'], biz: ['Elen Business.dc.html','elen-business'] }; const o = {}; for (const k in m) o[k] = dc ? encodeURI(m[k][0]) : '../' + m[k][1] + '/index.html'; return o; })(),
+      nav: (() => { const dc = /\.dc\.html$/.test(decodeURI(location.pathname)); const m = { nest: ['Kleines Nest.dc.html','kleines-nest'], bauk: ['Bauklötzchen.dc.html','bauklotzchen'], elen: ['Tagespflege Elen.dc.html','tagespflege-elen'], sonne: ['Sonnenkäfer.dc.html','sonnenkaefer'], puste: ['Pusteblume.dc.html','pusteblume'], biz: ['Elen Business.dc.html','elen-business'] }; const o = {}; for (const k in m) o[k] = dc ? encodeURI(m[k][0]) : '../' + m[k][1] + '/index.html'; o.modernist = '../modernist/index.html'; return o; })(),
       placesText: n > 0 ? `${n} ${n === 1 ? 'Platz' : 'Plätze'} frei ab Januar 2027` : 'Aktuell ausgebucht – Warteliste offen',
       showGallery: this.props.showGallery ?? true
     };

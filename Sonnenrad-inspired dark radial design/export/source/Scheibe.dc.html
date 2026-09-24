@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<svg viewBox="-102 -102 204 204" style="width:100%;height:100%;display:block;overflow:visible">
+<defs><filter id="{{ fid }}" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="{{ seed }}"></feTurbulence><feDisplacementMap in="SourceGraphic" scale="{{ rough }}"></feDisplacementMap></filter></defs>
+<g filter="url(#{{ fid }})" transform="rotate({{ rot }})">
+  <sc-for list="{{ rings }}" as="g" hint-placeholder-count="6">
+    <circle r="{{ g.r }}" fill="none" stroke="{{ g.c }}" stroke-width="{{ g.w }}" stroke-dasharray="{{ g.da }}" transform="rotate({{ g.rot }})" opacity="0.9"></circle>
+  </sc-for>
+  <g transform="rotate({{ split }})">
+    <path d="{{ halfA }}" fill="{{ cA }}" opacity="0.92"></path>
+    <path d="{{ halfB }}" fill="{{ cB }}" opacity="0.92"></path>
+  </g>
+</g>
+</svg>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:400,&quot;height&quot;:400},&quot;variant&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:0,&quot;min&quot;:0,&quot;max&quot;:20,&quot;tsType&quot;:&quot;number&quot;},&quot;rotate&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0,&quot;min&quot;:0,&quot;max&quot;:360,&quot;tsType&quot;:&quot;number&quot;},&quot;core&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:30,&quot;min&quot;:10,&quot;max&quot;:60,&quot;tsType&quot;:&quot;number&quot;}}">
+class Component extends DCLogic {
+  fid = 'w' + Math.random().toString(36).slice(2, 8);
+  renderVals() {
+    const v = Number(this.props.variant ?? 0);
+    let s = (v + 1) * 9301 + 49297;
+    const rnd = () => ((s = (s * 9301 + 49297) % 233280) / 233280);
+    const pal = this.props.strict === false ? ['#b8332b', '#d08a3a', '#6f9a3e', '#2f5fb3', '#8faa92', '#b97a6c', '#c49a3c', '#9fb7a6'] : ['#2250b3', '#b8332b', '#c9972f', '#6f9a3e'];
+    const strict = this.props.strict !== false;
+    const order = [[0, 1, 2, 3], [1, 3, 0, 2], [2, 0, 3, 1], [3, 2, 1, 0]];
+    const rings = [];
+    let r = 96, i = 0, last = -1;
+    const core = Number(this.props.core ?? 30);
+    while (r > core + 6) {
+      const w = 6 + Math.round(rnd() * 6);
+      let ci;
+      if (strict) { const o = order[(v + Math.floor(i / 4)) % 4]; ci = o[(i + v) % 4]; if (ci === last) ci = o[(i + v + 1) % 4]; rnd(); }
+      else { do { ci = Math.floor(rnd() * pal.length); } while (ci === last); }
+      last = ci;
+      const C = 2 * Math.PI * (r - w / 2);
+      const frac = i < 2 ? 0.5 + rnd() * 0.35 : (rnd() < 0.2 ? 0.8 : 1);
+      rings.push({ r: +(r - w / 2).toFixed(1), w, c: pal[ci], da: frac >= 1 ? 'none' : (C * frac).toFixed(1) + ' ' + (C * (1 - frac)).toFixed(1), rot: Math.round(rnd() * 360) });
+      r -= w + 2.6; i++;
+    }
+    const R = r - 1;
+    const pair = [['#c9972f', '#6f9a3e'], ['#6f9a3e', '#c9972f'], ['#c9972f', '#2250b3'], ['#6f9a3e', '#b8332b']][v % 4];
+    return {
+      fid: this.fid, seed: v + 2, rough: Number(this.props.rough ?? 3.2), rot: Number(this.props.rotate ?? 0), rings,
+      split: -35 + v * 20,
+      halfA: `M0,${-R} A${R},${R} 0 0 1 0,${R} Z`,
+      halfB: `M0,${R} A${R},${R} 0 0 1 0,${-R} Z`,
+      cA: pair[0], cB: pair[1]
+    };
+  }
+}
+</script>
+</body>
+</html>
